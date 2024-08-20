@@ -1,0 +1,31 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.base {
+  width: 300px;
+  text-align: center;
+  border: 1px solid hsl(0, 0%, 50%);
+  padding: 15px;
+  margin: 20px;
+  box-shadow: 5px 5px 5px hsl(0, 0%, 50%);
+  border-radius: 100px 0 0 0;
+  display: inline-block;
+}
+
+.title-name {
+  color: red;
+}
+
+.description {
+  color: gray;
+}
+
+.profile-picture {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
