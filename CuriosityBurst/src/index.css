@@ -1,0 +1,31 @@
+body {
+  font-size: 1.4rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.base {
+  box-shadow: 5px 5px 5px rgb(224, 224, 224);
+  border: 1px solid rgb(224, 224, 224);
+  padding: 10px 20px;
+  margin: 10px;
+  max-width: fit-content;
+  display: inline-block;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: lightcoral;
+  border-color: rgb(211, 101, 101);
+  border-style: solid;
+  transition: background-color 0.15s;
+  min-width: 200px;
+  max-width: fit-content;
+  color: white;
+  font-size: 2rem;
+}
+
+button:hover {
+  background-color: hsl(0, 79%, 62%);
+}
