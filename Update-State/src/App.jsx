@@ -1,10 +1,11 @@
-import MyComponent from "./myComponent.jsx";
+// import MyComponent from "./updateObjState.jsx";
+import ArrayState from "./updateArrayState.jsx";
 
 function App() {
 
   return (
     <>
-      <MyComponent/>
+      <ArrayState/>
     </>
   )
 }
