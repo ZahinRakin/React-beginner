@@ -4,15 +4,15 @@ function App() {
   const [count, setCount] = useState(0);
 
   function decrease(){
-    setCount(count - 1);
+    setCount(c => c - 1);
   }
 
   function reset(){
-    setCount(0);
+    setCount(0); //here updater function isn't necessary.
   }
 
   function increase(){
-    setCount(count + 1);
+    setCount(c => c + 1);    //  this is updater function.
   }
 
   return (
