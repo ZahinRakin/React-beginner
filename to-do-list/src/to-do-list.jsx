@@ -22,20 +22,28 @@ function ToDoList(){
     })
   }
 
+  function handleAddButton(){
+    const taskElem = document.querySelector(".add-task-input");
+    setTodos(t => [...t, taskElem.value]);
+    taskElem.value = "";
+  }
+
 
   return(
   <>
-  <div>
-    {todos.map((todo, index) => 
     <div>
-      <span>
-        {todo}
-      </span>
-      <button onClick={() => handleDeleteButton(index)}>Delete</button>
-      <button onClick={() => handleUpButton(index)}>&#x261D;</button>
-      <button onClick={() => handleDownButton(index)}>&#x1F447;</button>
-    </div>)}
-  </div>
+      {todos.map((todo, index) => 
+      <div>
+        <span>
+          {todo}
+        </span>
+        <button onClick={() => handleDeleteButton(index)}>Delete</button>
+        <button onClick={() => handleUpButton(index)}>&#x261D;</button>
+        <button onClick={() => handleDownButton(index)}>&#x1F447;</button>
+      </div>)}
+    </div>
+    <input className="add-task-input" type="text" placeholder="Enter task"/>
+    <button onClick={handleAddButton}>Add Task</button>
   </>
   );
 }
