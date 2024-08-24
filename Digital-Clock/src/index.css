@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("./assets/flamingos.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.clock-container {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+}
+
+.clock-container span:first-of-type {
+  font-size: 20rem;
+}
+
+.clock-container span:nth-of-type(2) {
+  font-size: 15rem;
+}
+
+.clock-background {
+  background-image: url("./assets/flamingos.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  display: grid;
+  place-content: center;
+}
+
+@media (max-width: 1000px) {
+  .clock-container span:first-of-type {
+      font-size: 10rem;
+    }
+  
+    .clock-container span:nth-of-type(2) {
+      font-size: 5rem;
+    }
+}
+
+@media (max-width: 500px) {
+  .clock-container span:first-of-type {
+      font-size: 5rem;
+    }
+  
+    .clock-container span:nth-of-type(2) {
+      font-size: 3rem;
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./Digital-Clock/src/assets/clock-icon.png">
+  <title>background clip</title>
+  <style>
+    body{
+      background-image: url("./Digital-Clock/src/assets/flamingos.jpg");
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    .dark-overlay{
+      background-color: rgba(0, 0, 0, 0.8);
+      height: 100%;
+      width: 100%;
+    }
+    .text-container{
+      height: 100%;
+      width: 100%;
+      font-size: 55rem;
+      font-weight: bold;
+      background-image: url("./Digital-Clock/src/assets/flamingos.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-clip: text;
+      color: transparent;
+      text-align:center;
+    }
+  </style>
+</head>
+<body>
+  <div class="dark-overlay">
+    <div class="text-container">
+      w
+    </div>
+  </div>
+</body>
+</html>
