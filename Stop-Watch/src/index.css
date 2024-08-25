@@ -1,0 +1,67 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+body, button{
+  color: white;
+  font-weight: bold;
+  color: transparent;
+}
+
+button {
+  background: transparent;
+  border: 5px solid transparent;
+  border-image: linear-gradient(to right, rgba(255, 217, 0, 0), gold) 1;
+  padding: 15px 25px;
+  transition: border-image 0.3s ease;
+  margin: 20px;
+  font-size: 2rem;
+}
+
+button:hover {
+  border-image: linear-gradient(to right, gold, hsla(51, 100%, 50%, 0)) 1;
+}
+
+button:active {
+  border-image: linear-gradient(to right,gold, gold) 1;
+}
+
+.image-background {
+  background-image: url("./assets/body-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.dark-overlay {
+  background: linear-gradient(to bottom, hsla(240, 100%, 9%, 1), hsla(0, 0%, 0%, 0.7));
+  height: 100%;
+}
+
+.watch-border {
+  border: 10px solid transparent;
+  border-image: linear-gradient(to right, hsla(51, 100%, 50%, 0.6), gold) 1;
+  font-size: 6rem;
+  display: inline-block;
+  padding: 3rem 6rem;
+  width: 520px;
+}
+
+.window {
+  background-image: url("./assets/body-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  background-clip: text;
+  display: grid;
+  place-items: center;
+}
+
+.button-holder {
+  display: flex;
+  justify-content: space-between;
+}
